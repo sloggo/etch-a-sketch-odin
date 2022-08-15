@@ -89,7 +89,7 @@ resetButton.addEventListener('click', () =>{
 })
 
 randomColourButton.addEventListener('click', () =>{
-    if(randomColour = true){
+    if(randomColour === true){
         randomColour = false;
     } else{
         randomColour = true;
