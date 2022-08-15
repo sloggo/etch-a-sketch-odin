@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridContainer{
+    margin: 7px 100px;
+    display: flex;
+    width: 500px;
+    aspect-ratio : 1 / 1;
+    justify-content: center;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.gridRow{
+    position: relative;
+    display: flex;
+}
+
+.gridBox{
+    flex: 1 1 auto;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    aspect-ratio : 1 / 1;
+}
