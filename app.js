@@ -37,6 +37,7 @@ let mouseDown = false;
 
 let resetButton = document.querySelector('.resetButton')
 let gridSizeButton = document.querySelector('.newGrid')
+let colorPicker = document.querySelector('#colorpicker')
 
 document.addEventListener('mousedown', () => {
     mouseDown = true
@@ -49,13 +50,13 @@ document.addEventListener('mouseup', () => {
 gridBoxes.forEach((box) => {
     box.addEventListener('mousedown', (event) => {
         console.log('clicked')
-        event.target.style.backgroundColor = 'blue';
+        event.target.style.backgroundColor = colorPicker.value;
     })
 
     box.addEventListener('mouseover', (event) => {
         console.log('hover')
         if(mouseDown === true){
-            event.target.style.backgroundColor = 'blue';
+            event.target.style.backgroundColor = colorPicker.value;
         }
     })
 })
@@ -80,13 +81,13 @@ gridSizeButton.addEventListener('click', () =>{
     newBoxes.forEach((box) => {
         box.addEventListener('mousedown', (event) => {
             console.log('clicked')
-            event.target.style.backgroundColor = 'blue';
+            event.target.style.backgroundColor = colorPicker.value;
         })
     
         box.addEventListener('mouseover', (event) => {
             console.log('hover')
             if(mouseDown === true){
-                event.target.style.backgroundColor = 'blue';
+                event.target.style.backgroundColor = colorPicker.value;
             }
         })
     })
