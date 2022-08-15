@@ -6,6 +6,11 @@ body{
     flex-direction: column;
 }
 
+.maintitle{
+    font-family: 'Silkscreen', cursive;
+    font-size: 50px;
+}
+
 .mainbox{
     display: flex;
     justify-content: center;
